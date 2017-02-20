@@ -1,0 +1,90 @@
+@media (max-width: 560px) {
+	.navbar-brand {display: none;}
+	.entrence .container .row div {width: 100%;}
+	.skip-wrap {width: 90%;}
+	.skip-wrap img {display: none;}
+	.skip-wrap .skip-text {
+		width: 100%;
+		text-align: center;
+	}
+	.select-entrence .row button:nth-child(1), 
+	.select-entrence .row button:nth-child(4) {
+		border-top-left-radius: 0px;
+		border-bottom-left-radius: 0px;
+		border-top-right-radius: 0px;
+		border-bottom-right-radius: 0px;
+	}
+	.select-entrence .row button.sel::before {border-style: none;}
+	.main .card {height: 120px;}
+	.card-preview {display: none;}
+	.main .container .aside-bar {font-size: 15px;}
+	.main-nav-mine {display: none;}
+}
+@media (max-width: 768px) {
+	.head_search .search_form {
+		width: 70vw;
+		height: 50px;
+	}
+	.entrence .container .row .line {height: 2px;}
+	.foot-right ul {
+		margin: 0;
+		margin-left: auto;
+		margin-right: auto;
+		padding-top: 2vh;
+		width: 200px;
+	}
+	.foot-right ul li:nth-child(4) {display: none;}
+	.recentNews .container .row {width: 100%;}
+	.main .container section {width: 100%;}
+	.main .container aside {
+		display: none;
+		/*margin-bottom: 5%;
+		clear: both;
+		width: 100%;
+		font-size: 17px;
+		text-align: center;
+*/	}
+	/*.aside-circle {display: none;}*/
+	.foot-left p {display: none;}
+	.foot-left .foot-logo {margin-top: 2vh;}
+	
+}
+@media (min-width: 768px) {
+	.head_search .search_form {width: 50vw;}
+	.hotzone .container .right {
+		margin-top: 13px;
+		margin-right: 2vw;
+	}
+	.foot-left .foot-logo, 
+	.foot-left p {
+		position: relative;
+		display: inline-block;
+		margin-left: 3vw;
+		margin-top: 1.5vh;
+		font-size: 18px;
+		}
+	.foot-left .foot-logo {
+		left:2vw;
+		height: 7.5vh;
+	}
+	.foot-left p {top: 1.3vh;}
+	body[id="question"] .navbar {border-radius: 0;}
+	.main .card {height: 120px;}
+	.card-preview {display: none;}
+}
+@media (max-width: 1200px) {
+	.main article .card {font-size: 14px;}
+	.aside-bar {font-size: 12px;}
+	.aside-circle {display: none;}
+	.aside-headline, 
+	.aside-time {margin-left: 6%;}
+	.aside-headline {font-size: 1.1em;}
+	.aside-time {font-size: 0.9em;}
+	.main .main-nav .nav-li {font-size: 16px;}
+}
+@media (min-width: 1200px) {
+	.head_search .search_form {width: 550px;}
+	.main .card .Tcontents {width: 87%;}
+	.main .card {height: 150px;}
+	.card-preview {display: block;}
+}

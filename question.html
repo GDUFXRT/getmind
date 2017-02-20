@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+ <meta charset="UTF-8">
+ <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+ <meta name="renderer" content="webkit">
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+ <link rel="shortcut icon" href="logo.ico">
+ <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+ <link rel="stylesheet" href="css/common.css">
+ <link rel="stylesheet" href="css/module.css">
+ <link rel="stylesheet" href="css/media.css">
+ <title>question</title>
+</head>
+<body id="question">
+	<nav class="navbar navbar-default navbar_absolute">
+		<div class="container">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-1" aria-expanded="false">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="index.html"></a>
+			</div>
+			<ul class="navbar-right-col">
+				<li class="hide" id="logoned">
+					<img class="nav-user-img" id="headUserImg" src="img/userimg.jpg" alt="">
+					<span class="nav-user-name" id="headUserName">广东金融学院</span>
+					<div class="user-information-wrap" id="userInformation">
+						<div class="userbar">
+							<div class="userbarleft">
+								<span>
+									<h5><a href="" id="userBarUserName">广东金融学院</a></h4>
+									<p>
+										<a class="age left" id="userAge" href="">5</a>
+										<a class="post right" id="userPost" href="">1000</a>
+									</p>
+								</span>
+								<span class="school" id="UserSchool">广东金融学院</span>
+								<span class="major" id="UserMajor">计算机科学与技术</span>
+								<span class="interest" id="UserInterest">科技 学术 等等话题</span>
+							</div>
+							<div class="userbarright">
+								<ul>
+									<li><a href="" id="myIndex">我的主页</a></li>
+									<li><a href="" id="personalVisit">个人设置</a></li>
+									<li><a href="" id="myMessage">我的消息</a></li>
+									<li><a href="" id="quit">退出登录</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</li>
+				<li class="" id="logon">
+					<span class="glyphicon glyphicon-user"></span>
+					<span class="nav-login">登录/注册</span>
+				</li>
+				<li class="" id="searchcon">
+					<span class="glyphicon glyphicon-search"></span>
+					<span class="nav-login ">搜索</span>
+					<div class="search-wrap">
+						<div class="searchbar">
+							<form action="">
+								<input type="text" id="navSearchText" placeholder="搜索">
+								<button class="searchBtn_hover glyphicon glyphicon-search" id="navSearchButton"></button>
+							</form>
+						</div>
+					</div>					
+				</li>
+			</ul>
+		</div>
+	</nav>
+	<div class="logon_bg"></div>
+	<div class="logon_container">
+		<div class="logon_wrap">
+			<div class="logon_body">
+				<span class="glyphicon glyphicon-remove" id="removeLogon"></span>
+						<div class="logon_body_row1">					
+							<ul class="logon_body_btn">
+								<li id="logon_btn" class="left">登录</li>
+								<li id="sign_btn" class="right">注册<span class="glyphicon glyphicon-arrow-right"></span></li>
+							</ul>
+							<div id="logon_main" class="logon_main">
+								<input type="text" class="username" placeholder="用户名" />
+								<span class="input_tips">用户名不存在！ 请注册</span>
+								<input type="password" class="password" placeholder="密码" autocomplete="off"/>
+								<span class="input_tips">密码错误！</span>
+								<div>
+									<label class="re_me left">
+										<input type="checkbox" id="re_me">
+										记住我
+									</label>
+									<a href="#" class="right">忘记密码</a>
+								</div>
+								<button id="logonsend">登 录</button>
+							</div>
+						</div>
+						<div class="logon_body_row2">
+							<ul class="logon_body_btn">
+								<li id="logon_btn" class="left"><span class="glyphicon glyphicon-arrow-left"></span>登录</li>
+								<li id="sign_btn" class="right">注册</li>
+							</ul>
+							<div id="sign_main" class="logon_main">
+								<input type="text" class="username"  placeholder="用户名  (2-10个字符)" />
+								<span class="input_tips">用户名已被注册！请更换</span>
+								<span class="input_tips">用户名最少2个字符，不超过10个字符</span>
+								<input type="text" class="email" placeholder="邮箱" />
+								<span class="input_tips">邮箱已被注册，请更换</span>
+								<span class="input_tips">邮箱格式不正确！</span>
+								<input type="password" class="password" placeholder="密码  (6-20个字符)" autocomplete="off"/>
+								<span class="input_tips">密码长度最少6位，不超过20位</span>
+								<button id="signsend">注 册</button>
+							</div>
+						</div>
+			</div>
+		</div>
+	</div>
+	<div class="select-entrence">
+		<div class="container">
+			<h3 class="headline">make you choise</h3>
+			<div class="row">
+				<a class="row-entrence entrence-question col-xs-3 sel">问题探讨</a>
+				<a class="row-entrence entrence-team col-xs-3">求助组队</a>
+				<a class="row-entrence entrence-show col-xs-3">成果展示</a>
+				<a class="row-entrence entrence-share col-xs-3">资源分享</a>
+			</div>
+		</div>
+	</div>
+	<div class="recentNews">
+		<div class="container">
+			<div class="row">
+				<span class="glyphicon glyphicon-th-list" style="color: #00b7ee;font-size: 20px;"></span>
+				<span>最新动态</span>
+				<a class="right recentPost" href="">发帖</a>
+			</div>
+		</div>
+	</div>
+	<div class="main">
+		<div class="container">
+			<div class="row">
+				<section>
+					<nav>
+						<ul class="main-nav">
+							<li class="nav-li main-nav-all active"><a href="">全部</a></li>
+							<li class="nav-li main-nav-essence"><a href="">精华</a></li>
+							<li class="nav-li main-nav-recommend"><a href="">推荐</a></li>
+							<li class="nav-li main-nav-mine"><a href="">我的帖子</a></li>
+							<li class="nav-li">
+								<div class="dropdown">
+									<button type="button" class="dropdown-toggle" id="dropdown-order" 
+								      data-toggle="dropdown">
+								      <span id="orderText">最近发表</span>
+										<span class="caret" style="border-width: 7px;"></span>
+									</button>
+									<ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+										<li role="presentation">
+											<a role="menuitem" tabindex="-1" href="question.html?order=0" class="main-nav-hot">热门帖子</a>
+										</li>
+										<li role="presentation">
+											<a role="menuitem" tabindex="-1" href="question.html?order=1" class="main-nav-last">最近发表</a>
+										</li>
+								 	</ul>
+								</div>
+							</li>
+						</ul>
+					</nav>
+					<article>
+
+					</article>
+				</section>
+				<aside class="aside-bar">
+					<lable class="">
+						<a href="javascript:;" id="classifTag">类型</a>
+					</lable>
+					<lable class="asideNav">
+						<a href="javascript:;" id="infoTag">通知</a>
+					</lable>
+					<div class="classif left">
+						<li>
+							<a id="allMajor" class="active" href="question.html?MajorType=allMajor">全部</a>    
+							<a id="web" class="" href="question.html?MajorType=web">web</a>
+							<a id="java" class="" href="question.html?MajorType=java">java</a>
+							
+						</li>
+						<li>
+							<a id="Android" class="" href="question.html?MajorType=Android">Android</a>
+							<a id="C" class="" href="question.html?MajorType=C">C</a>
+							<a id="python" class="" href="question.html?MajorType=python">python</a>
+							
+						</li>
+						<li>
+							<a id="sql" class="" href="question.html?MajorType=sql">sql</a>
+							<a id="php" class="" href="question.html?MajorType=php">php</a>
+						</li>
+					</div>
+					<div class="aside-text infoCon" style="display:none" >
+						<li class="aside-li">
+							<span class="aside-circle"></span>
+							<span class="aside-headline">
+								<a href="">关于集思网开放时间的通知！</a>
+							</span><br>
+							<span class="aside-time">1小时前</span>
+						</li>
+						<li class="aside-line"></li>
+						<li class="aside-li">
+							<span class="aside-circle"></span>
+							<span class="aside-headline">
+								<a href="">关于集思网开放时间的通知！</a>
+							</span><br>
+							<span class="aside-time">1小时前</span>
+						</li>
+						<li class="aside-line"></li>
+						<li class="aside-li">
+							<span class="aside-circle"></span>
+							<span class="aside-headline">
+								<a href="">关于集思网开放时间的通知！</a>
+							</span><br>
+							<span class="aside-time">1小时前</span>
+						</li>
+						<li class="aside-line"></li>
+						<li class="aside-li">
+							<span class="aside-circle"></span>
+							<span class="aside-headline">
+								<a href="">关于集思网开放时间的通知！</a>
+							</span><br>
+							<span class="aside-time">1小时前</span>
+						</li>
+						<li class="aside-line"></li>
+						<li class="aside-li">
+							<span class="aside-circle"></span>
+							<span class="aside-headline">
+								<a href="">关于集思网开放时间的通知！</a>
+							</span><br>
+							<span class="aside-time">1小时前</span>
+						</li>
+					</div>
+					
+				</aside>
+			</div>
+		</div>
+	</div>
+	<footer>
+		<div class="foot-left">
+			<a href=""><img src="img/logowhite.png" alt="" class="foot-logo"></a>
+			<p>大学交流新方式</p>
+		</div>
+		<div class="foot-right">
+			<ul>
+				<li><a href="">关于我们</a></li>
+				<li></li>
+				<li><a href="">联系我们</a></li>
+				<li></li>
+				<li><a href="">合作申请</a></li>
+				<li></li>
+				<li><a href="">意见反馈</a></li>
+			</ul>
+		</div>
+		<div class="foot-line"></div>
+		<span class="copyright">Copyright © 2015 广州天河 粤**********</span>
+	</footer>
+<script src="js/jquery.js"></script>
+<script src="bootstrap/js/bootstrap.min.js"></script>
+<script src="js/jquery.cookie.js"></script>
+<script src="js/common.js"></script>
+<script src="js/dataTrade.js"></script>
+</body>
+</html>
